@@ -1,0 +1,474 @@
+.App {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bruh */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppin',sans-serif;
+  align-items: center;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-family: 'Gabarito', cursive;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.headers{
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.header{
+  
+  background: #e9f5f9;
+  margin: 20px;    
+  color: #3ba1c5;
+}
+
+.text-content{
+  height: 200px;
+  text-align: center;
+}
+
+.hhb{
+  position: relative;
+  
+}
+
+.wbms{
+  position: relative;
+  
+  
+}
+
+
+.sympcheck{
+  font-size: 20px;
+  
+}
+
+.ipc{
+  position: relative;
+  top: 10px;
+}
+
+h1{
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.widget{
+  background: #e9f5f9;
+  border-radius: 25px;
+  border-color: #000;
+  margin: auto;
+  width: 800px;
+  height: max-content;
+}
+
+.container{
+  display: flex;
+  height: 200px;
+}
+
+
+
+
+.age-form{
+  display: inline-flex;
+  float: right;
+}
+
+.age-text{
+  width: max-content;
+  padding: 20px;
+}
+
+.gender-selection{
+  display: inline-flex;    
+  float: left;
+  height: 200px;
+  text-align: left;
+}
+
+.gender-text{
+  width: max-content;
+  padding: 20px;
+  font-size: x-small;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+
+.radio-list{
+  color: #ffffff;
+  text-align: center;
+  width:max-content;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.age-form{
+  position: relative;
+  display: inline-flex;
+  padding: 20px;
+  height: 300px;
+  text-align: right;
+  left: 100px;
+}
+
+.age-inp{
+  margin-right: 20px;
+  
+}
+
+.age-textt{
+  
+  position: relative;
+  display: inline-flex;
+  font-size: large;
+
+}
+
+#ageError{
+  display: block;
+  position: relative;
+  width: max-content;
+}
+
+
+.but-cont{
+  height: 200px;
+  text-align: center;
+}
+
+.butrah{
+  position: relative;
+  top: 100px;
+  left: -201px;    
+}
+
+/* BUTTON */
+
+.but{
+  position: relative;
+  background: #dec7c7;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.3s;
+}
+
+.but:hover{
+  background: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 20px var(--clr);
+}
+/* BUTTON */
+
+/* RADIO */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+}
+.radio-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.radio-item [type="radio"]{
+  display: none;
+}
+
+.radio-item + .radio-item{
+  margin-top: 15px;
+}
+.radio-item label{
+  display: block;
+  padding: 20px 60px;
+  background: #e9f5f9;
+  border:2px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  min-width: 250px;
+  white-space: nowrap;
+  position: relative;
+}
+.radio-item label:after,
+.radio-item label:before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.radio-item label:after{
+  height: 20px;
+  width: 20px;
+  border:2px solid black;
+  left: 20px;
+  top: calc(50% - 12px);
+}
+.radio-item label:before{
+  background: #0c0a4e;
+  height: 10px;
+  width: 10px;
+  left: 27px;
+  top: calc(50% - 5px);
+  transform: scale(5);
+  transition: .4s ease-in-out 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+.radio-item [type="radio"]:checked ~ label{
+  border-color: black;
+}
+
+.radio-item [type="radio"]:checked ~ label:before{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+/* RADIO */
+
+.human-body {
+  position: relative;
+  top: 27px ;
+  left: 435px;
+}
+.human-body svg:hover {
+  cursor: pointer;
+}
+.human-body svg:hover path {
+  fill: #ff7d16;
+}
+.human-body svg {
+  position: absolute;
+  left: 50%;
+  fill: #57c9d5;
+}
+.human-body svg.head {
+  margin-left: -28.5px;
+  top: -6px;
+}
+.human-body svg.shoulder {
+  margin-left: -53.5px;
+  top: 69px;
+}
+.human-body svg.arm {
+  margin-left: -78px;
+  top: 112px;
+}
+.human-body svg.cheast {
+  margin-left: -43.5px;
+  top: 88px;
+}
+.human-body svg.stomach {
+  margin-left: -37.5px;
+  top: 130px;
+}
+.human-body svg.legs {
+  margin-left: -46.5px;
+  top: 205px;
+  z-index: 9999;
+}
+.human-body svg.hands {
+  margin-left: -102.5px;
+  top: 224px;
+}
+
+.highlighted{
+
+  fill: #ff7d16;
+}
+
+#area {
+ 
+  clear: both;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Courier New;
+  color: #a5a5a5;
+}
+
+#area #data {
+  color: black;
+}
+
+.body-map{
+  display: flex;
+  padding-left: 80px;
+}
+
+.symp-widget{
+  height: 700px;
+}
+
+.symp-textt{
+  margin-left: 20px;
+}
+
+.state-sympt{
+  position: relative;
+  top: -50px;
+  left: -19px;
+}
+
+#data{
+  position: relative;
+  top: 71px;
+  left: 545px;
+}
+
+.symp-but{
+  position: absolute;
+  top: 500px;
+  left: px;
+}
+
+.butsympt{
+  position: relative;
+  left: 100px;
+}
+
+.addSympt{
+  position: relative;
+  top: 31px;
+  left: -200px;
+}
+
+.list{
+  display: flex ;
+  flex-direction: column;
+  position: relative;
+  height: 350px;
+  width: 300px;
+  top: 30px;
+  left: 70px;
+}
+
+.list-item{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-size: large;
+}
+
+.list-item-button{
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.buthome{
+  position: relative;
+  top: 80px;
+}
+
+.question-item{
+    margin: 10px;
+}
+
+.but-ques{
+  position: relative;
+  top: 50px;
+}
+
+.Diabetes-ques{
+  margin: 20px;
+}
+
+.Genral-Questions{
+  margin: 20px;
+}
+
+.Disease{
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.Disease-cont{
+  padding-left: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-size: x-large; */
+}
+
+.Disease-h1{
+  padding-left: 15px;
+  padding: 10px;
+  font-size: xx-large;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.la{
+  padding-bottom: 40px;
+}
+
