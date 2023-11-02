@@ -11,6 +11,11 @@ App.use(cors());
 
 mongoose.connect("mongodb+srv://dinesh:dinesh123@cluster0.neiokbm.mongodb.net/healthhub100?retryWrites=true&w=majority")
 
+
+App.get('/',(req,res) =>{
+  res.json("HuhaHuha");
+})
+
 App.get("/getDiseases", async (req, res) => {
     try {
       const diseases = await DiseaseModel.find({});
@@ -22,6 +27,7 @@ App.get("/getDiseases", async (req, res) => {
     }
   });
   
+
 
 App.listen(3001,()=>{
   console.log("Server bhaga");
