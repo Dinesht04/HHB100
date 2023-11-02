@@ -17,6 +17,7 @@ App.get("/getDiseases", async (req, res) => {
       res.json(diseases);
     } catch (err) {
       console.log(err);
+      console.log('cant connect with MongoDB')
       res.status(500).send("Internal server error");
     }
   });
