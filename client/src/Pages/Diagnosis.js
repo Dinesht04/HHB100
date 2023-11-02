@@ -13,7 +13,7 @@ export const Diagnosis = () =>{
     const [diseaseList, setDiseaseList] = useState([]);
       
     useEffect(() => {
-      axios.get("http://localhost:3001/getDiseases").then((response) => {
+      axios.get("https://hhb100.onrender.com/getDiseases").then((response) => {
         const userSymptoms = symptomList.map(symptom => symptom.toLowerCase());
   
         const filteredDiseases = response.data.filter((disease) => {
